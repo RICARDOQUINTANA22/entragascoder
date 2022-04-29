@@ -2,12 +2,16 @@ body {
     padding: auto;
     margin: auto;
 }
+
 .cont-home {
     display: grid;
    grid-template-areas: 
-   "header nav"
-   "main main"
-   "footer footer"; 
+   "nav"
+   "header"
+   "main"
+   "footer"; 
+}
+
 }
 
 nav {
@@ -28,16 +32,18 @@ header img {
     height: 100px;
     
 }
+
+
 header {
     display: flex;
     align-items: flex-start;
     font-size: x-large;
     font-family: 'Beau Rivage', cursive
+    
 }
 nav ul li{
     list-style: none;
-    display: flex;
-    float: right;
+    display: block;
     padding: 15px;
 }
 nav ul li a{
@@ -45,27 +51,28 @@ nav ul li a{
     color: #000000;
 }
 .section1-home {
-    width:800px;
-    height: 100%;
+    width:auto;
+    height:auto;
 }
 .p-main {
     position: relative;
     align-items: center;
-    transform: translateY(50%) ;
+    
 }
 .section2-home {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    padding:  2px 60px;
+    width: auto;
+    height: auto;
 }
 img {
-    width: 300px;;
+    width: 300px;
     height: 300px;
     padding: 2px;
     object-fit: cover;
 }
 span {
     color: #8a2be2;
+    
 }
 p {
     font-size: 50px;
@@ -76,10 +83,7 @@ p {
     top: 50%;
 
 }
-main {
-    display: flex;
-    align-items: flex-start;
- }
+
 
  footer ul li {
 list-style: none;
@@ -99,11 +103,6 @@ padding: 20px;
     display: flex;
     justify-content: center;
  }
- .main-store {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
 }
 h2 {
     font-size: 50px;
@@ -148,4 +147,52 @@ h2 {
 .main-sense img{
 width: 100%;
 height: 100%;
+}
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+@media screen and (min-width: 600px) {
+ .cont-home {
+        display: grid;
+       grid-template-areas: 
+       "header nav"
+       "main main"
+       "footer footer"; 
+    }
+    }
+@media screen and  (min-width: 600px ) {
+    nav a {
+        display: flex;
+        float: right;
+    }    
+}
+    
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+        align-items: flex-start;
+     }
+}
+@media screen and (min-width: 600px) {
+   .p-main{ 
+    transform: translateY(50%) ;
+    }
+}
+    
+@media screen and (min-width: 600px) {
+    .section2-home {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+}
+    
+} 
+@media screen and (min-width: 600px) {
+    .main-store {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+}
+    
 }
