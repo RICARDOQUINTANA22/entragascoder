@@ -33,7 +33,6 @@ header img {
     
 }
 
-
 header {
     display: flex;
     align-items: flex-start;
@@ -152,6 +151,10 @@ h2 {
     text-align: center;
     font-size: xx-large;
 }
+.main-contact {
+    padding: auto;
+    margin: auto;
+}
 @media screen and (min-width: 600px) {
  .cont-home {
         display: grid;
@@ -194,5 +197,22 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
 }
+    
+}
+@media screen and (min-width: 600px) {
+    .cont-contact {
+        display: grid;
+       grid-template-areas: 
+       "header nav"
+       "main main"
+       "footer footer"; 
+    }
+    
+}
+@media screen and (min-width: 600px) {
+    .main-contact {
+        padding: auto;
+        margin: 200px;
+    }
     
 }
